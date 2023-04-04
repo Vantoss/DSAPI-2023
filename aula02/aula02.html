@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSAPI - 2</title>
+</head>
+<body>
+    <form id="meuForm" action="salvar.php" onsubmit="return validar()">
+        <input type="text" id="txtValor">
+        <input type="submit" value="Salvar">
+    </form>
+    <p id="info"></p>
+    <hr>
+    <button onclick="lerObjeto()">Ler Objeto</button>
+    <div id="divObjeto"></div>
+    <hr>
+    <!--EXERCÍCIO-->
+    <h1>Cálculo de área</h1>
+    <div id="divRetangulo">
+        <input type="text" id="vAltura" placeholder="Altura do retângulo">
+        <input type="text" id="vLargura" placeholder="Largura do retângulo">
+        <input type="button" value="Calcular" onclick="areaRetangulo()">
+        <p id="pResultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
