@@ -7,11 +7,11 @@
     <title>Produtos Loja</title>
 </head>
 <body>
-    <form action="http://localhost:8001/produtos" method="POST">
-        <input type="text" name="nome" placeholder="Nome do Produto"> <br>
-        <input type="text" name="preco" placeholder="Preço do Produto"> <br>
-        <input type="submit" value="Salvar">
-    </form>
+    <!--<form action="http://localhost:8001/produtos" method="POST"> -->
+        <input type="text" name="nome" id="txtNome" placeholder="Nome do Produto"> <br>
+        <input type="text" name="preco" id="txtPreco" placeholder="Preço do Produto"> <br>
+        <input type="button" onclick="add()" value="Salvar">
+    <!--</form> -->
     <hr>
     <button id="atualizar" onclick="ler()">Atualizar</button>
     <div id="status"></div>
