@@ -1,6 +1,7 @@
 const jose = require('jose');
 
 function decodeJwtResponse(token){
+    jose.decodeProtectedHeader(token);
     jose.decodeJwt(token);
 };
 function handleCredentialResponse(response) {
